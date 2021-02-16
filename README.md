@@ -22,5 +22,5 @@
 
 ![Edit Page](images/wiki_edit.png)
 
-#### For more click on link
+
 
