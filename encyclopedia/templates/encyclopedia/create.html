@@ -1,0 +1,17 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    View
+{% endblock %}
+
+{% block body %}
+
+<form style="padding-top: 20px;" method="POST" action="{% url 'create' %}">
+    {% csrf_token %}
+    <input type="text" placeholder="Title" class="form-control" style="width: 200px;" name="title"><br><br>
+    <textarea placeholder="Content" class="form-control rounded-0" style="height: 400px; width: 800px;" name="content"></textarea>
+    <br>
+    <input type="submit" class="btn btn-primary" >
+</form>
+
+{% endblock %}
